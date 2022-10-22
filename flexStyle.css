@@ -1,0 +1,115 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+    font-size: 3em;
+
+}
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /*align-items: flex-end;*/
+    /*justify-content: space-evenly;*/
+    justify-content: center;
+    /*justify-content: flex-end;*/
+    /*justify-content: flex-start;*/
+    /*flex-direction: row-reverse;*/
+}
+#container div{
+    width: 200px;
+    height: 200px;
+}
+
+#container1 {
+    background-color: #003049;
+    width: 90%;
+    height: 800px;
+    margin: 5% auto 5% auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly
+    /*flex-direction: column-reverse;*/
+}
+#container1 div{
+    width: 200px;
+    height: 100px;
+}
+#container2 {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /*justify-content: center;*/
+    /*justify-content: flex-end;*/
+    /*justify-content: flex-start;*/
+    /*flex-direction: row-reverse;*/
+}
+#container2 div{
+
+    text-align: center;
+    width: 200px;
+    max-height: 200px;
+    flex-basis: 200px;
+    flex-shrink: 2;
+}
+main{
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+
+}
+main .sidebar{
+    background-color: green;
+    flex: 1 2 150px;
+}
+main .maincontent{
+    background-color: white;
+    flex: 2 3 500px;
+}
+
+@media (max-width: 560px){
+    h1{
+        font-size: 2.5em;
+    }
+    nav,nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 444px){
+    h1{
+        font-size: 1.5em;
+    }
+}
+nav{
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+ul, li{
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    border: 1px solid red;
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
